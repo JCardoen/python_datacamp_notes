@@ -18,7 +18,10 @@ print("Median height of goalkeepers: " + str(np.median(gk_heights)))
 # Print out the median height of other players. Replace 'None'
 print("Median height of other players: " + str(np.median(other_heights)))
 
----------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import numpy
 import numpy as np
 
@@ -37,7 +40,10 @@ print("Standard Deviation: " + str(stddev))
 # Print out correlation between first and second column. Replace 'None'
 corr = np.corrcoef(np_baseball[:,0],np_baseball[:,1])
 print("Correlation: " + str(corr))
-----------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Open a file: file
 file = open("moby_dick.txt", mode = 'r')
 
@@ -52,7 +58,10 @@ file.close()
 
 # Check whether file is closed
 print(file.closed)
--------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import package
 import numpy as np
 
@@ -72,7 +81,10 @@ im_sq = np.reshape(im, (28, 28))
 # Plot reshaped data (matplotlib.pyplot already loaded as plt)
 plt.imshow(im_sq, cmap='Greys', interpolation='nearest')
 plt.show()
-----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Assign filename: file
 file = 'seaslug.txt'
 
@@ -93,7 +105,10 @@ plt.scatter(data_float[:, 0], data_float[:, 1])
 plt.xlabel('time (min.)')
 plt.ylabel('percentage of larvae')
 plt.show()
-----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Assign the filename: file
 file = 'titanic.csv'
 
@@ -102,7 +117,10 @@ d = np.recfromcsv(file, delimiter = ',', names = True, dtype = None)
 
 # Print out first three entries of d
 print(d[:3])
-----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import pandas as pd
 import pandas as pd
 
@@ -114,7 +132,10 @@ df = pd.read_csv(file)
 
 # View the head of the DataFrame
 print(df.head())
-----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 import pandas as pd
 
 # Assign the filename: file
@@ -128,7 +149,10 @@ data_array = np.array(data.values)
 
 # Print the datatype of data_array to the shell
 print(type(data_array))
-------------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 
@@ -146,7 +170,10 @@ pd.DataFrame.hist(data[['Age']])
 plt.xlabel('Age (years)')
 plt.ylabel('count')
 plt.show()
---------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import pickle package
 import pickle
 
@@ -159,7 +186,10 @@ print(d)
 
 # Print datatype of d
 print(type(d))
---------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import pandas
 import pandas as pd
 
@@ -171,7 +201,10 @@ xl = pd.ExcelFile(file)
 
 # Print sheet names
 print(xl.sheet_names)
---------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Load a sheet into a DataFrame by name: df1
 df1 = xl.parse("2004")
 
@@ -183,7 +216,10 @@ df2 = xl.parse(0)
 
 # Print the head of the DataFrame df2
 print(df2.head())
---------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 
 # Parse the first sheet and rename the columns: df1
 df1 = xl.parse(0, skiprows=[1], names=['Country', 'AAM due to War (2002)'])
@@ -196,7 +232,10 @@ df2 = xl.parse(1, parse_cols=[0], skiprows=1, names=['Country'])
 
 # Print the head of the DataFrame df2
 print(df2.head())
---------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import sas7bdat package
 from sas7bdat import SAS7BDAT
 
@@ -211,7 +250,10 @@ print(df_sas.head())
 pd.DataFrame.hist(df_sas[['P']])
 plt.ylabel('count')
 plt.show()
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import pandas
 import pandas as pd
 
@@ -226,7 +268,10 @@ pd.DataFrame.hist(df[['disa10']])
 plt.xlabel('Extent of disease')
 plt.ylabel('Number of coutries')
 plt.show()
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import packages
 import numpy as np
 import h5py
@@ -243,7 +288,10 @@ print(type(data))
 # Print the keys of the file
 for key in data.keys():
     print(key)
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Get the HDF5 group: group
 group = data['strain']
 
@@ -265,7 +313,10 @@ plt.plot(time, strain[:num_samples])
 plt.xlabel('GPS Time (s)')
 plt.ylabel('strain')
 plt.show()
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import package
 import scipy.io
 
@@ -274,7 +325,10 @@ mat = scipy.io.loadmat('albeck_gene_expression.mat')
 
 # Print the datatype type of mat
 print(type(mat))
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Print the keys of the MATLAB dictionary
 print(mat.keys())
 
@@ -291,13 +345,19 @@ plt.plot(data)
 plt.xlabel('time (min.)')
 plt.ylabel('normalized fluorescence (measure of expression)')
 plt.show()
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import necessary module
 from sqlalchemy import create_engine
 
 # Create engine: engine
 engine = create_engine('sqlite:///Chinook.sqlite')
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import necessary module
 from sqlalchemy import create_engine
 
@@ -309,7 +369,10 @@ table_names = engine.table_names()
 
 # Print the table names to the shell
 print(table_names)
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import packages
 from sqlalchemy import create_engine
 import pandas as pd
@@ -331,7 +394,10 @@ con.close()
 
 # Print head of DataFrame df
 print(df.head())
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Open engine in context manager
 # Perform query and save results to DataFrame: df
 with engine.connect() as con:
@@ -344,7 +410,10 @@ print(len(df))
 
 # Print the head of the DataFrame df
 print(df.head())
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Create engine: engine
 engine = create_engine('sqlite:///Chinook.sqlite')
 
@@ -357,7 +426,9 @@ with engine.connect() as con:
 
 # Print the head of the DataFrame df
 print(df.head())
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
 # Import packages
 from sqlalchemy import create_engine
 import pandas as pd
@@ -380,7 +451,10 @@ with engine.connect() as con:
 
 # Confirm that both methods yield the same result: does df = df1 ?
 print(df.equals(df1))
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Import packages
 from sqlalchemy import create_engine
 import pandas as pd
@@ -393,7 +467,10 @@ df = pd.read_sql_query("SELECT * FROM Employee WHERE EmployeeId >= 6 ORDER BY Bi
 
 # Print head of DataFrame
 print(df.head())
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Open engine in context manager
 # Perform query and save results to DataFrame: df
 with engine.connect() as con:
@@ -403,7 +480,10 @@ with engine.connect() as con:
 
 # Print head of DataFrame df
 print(df.head())
----------------------------------------------------------------------------------------------------
+
+########################################################################################################
+
+
 # Execute query and store records in DataFrame: df
 df = pd.read_sql_query(
 	"SELECT * FROM PlaylistTrack 
